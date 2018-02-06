@@ -1,0 +1,179 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #7b7b7b; 
+    font-family: 'Architects Daughter', 'Arial';
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/* -------------- */
+/* HEADER */
+/* -------------- */
+
+/* NAVIGATION */
+
+.navigation {
+    list-style: none;
+    margin-top: 0;
+    margin-right: 10px;
+    float:right;
+    display: inline-block;
+}
+
+.navigation li {
+    display: inline-block;
+    margin-left: 40px; 
+}
+
+a:link, 
+a:visited {
+    color: #0F0FFF;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.4s; 
+}
+
+a:hover,
+a:visited {
+    border-bottom: 2px solid rgba(81, 98, 212, 0.83);
+}
+
+h1 { 
+    font-family: 'Bungee', Arial;
+    font-size: 400%; 
+    color: #0F0FFF;
+    letter-spacing: 10px;  
+}
+
+h2 { 
+    font-size: 250%;
+    color: #0023ee;
+    }
+
+.header {
+    display: inline-block;
+}
+.header h3 {
+    margin: 5% 8%;
+    width: 100%;   
+}
+
+.logo {
+    background-color: /*#D4E9FF*/ #efefef;
+    width: 38%;
+    text-align: left;
+    border-radius: 10px;
+    margin-left: 2%; 
+    display: block;   
+}
+
+
+
+.shadow {
+   box-shadow: 0 5px 5px #d9d9d9;
+
+}
+
+
+/* -------------- */
+/* CATALOG NAVIGATION */
+/* -------------- */
+
+
+.fixed-scroll {
+    position: fixed;
+}
+
+.catalog {
+    border: none; 
+    display: inline-block;
+    position: fixed;
+    top: 30%;
+    right: 2%;
+    border-radius: 10px;
+    background-color: #efefef/*D4E9FF*/;
+    width: 20%;
+}
+
+.navigation-bar li {
+    list-style: none; 
+    margin: 20px;
+    text-align: center;
+    padding: 0 20px;
+}
+.navigation-bar li a {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #0F0FFF;
+    transition: border-bottom 0.2s; 
+}
+
+.navigation-bar li a:link,
+.navigation-bar li a:visited {
+    font-size: 110%;
+    color: #0F0FFF;
+}
+
+/* -------------- */
+/* CATALOG SEARCH*/
+/* -------------- */
+
+.span-1-of-5 {
+    width: 17.72%;
+}
+
+h4 {
+    margin: 10px;
+}
+
+.col {
+    margin: 1% 0 1% 1%;
+}
+.row {
+    margin: 1% 0% 1% 10%;
+}
+
+.catalog-search {
+    display: inline-block;
+}
+
+.item-showcase {
+    height: auto;
+    background-color: #efefef/*D4E9FF*/;
+    margin-left: 5%;
+    width: 95%;
+}
+
+.item-photo a:hover,
+.item-photo a:visited {
+    border-bottom: none;
+}
+
+.item-photo {
+    width: 90%;
+}
+
+.item-photo img {
+    width: 100%;
+    height: auto;   
+    background-color: #848484;
+}
+
+.details {
+    margin: 0px;
+    color: #000;
+    text-align: center;
+    list-style: none;
+
+}
+

@@ -4,6 +4,19 @@ html {
 
 body {
 	font-family: 'Josefin Sans', sans-serif;
+	max-width: 1500px;
+}
+
+ul {
+	list-style: none;
+}
+
+/* =================== */
+/*      NAVBAR  	   */
+/* =================== */
+
+.navbar {
+	background-color: #233142;
 }
 
 /* =================== */
@@ -27,7 +40,8 @@ header {
 }
 
 h1, h2, h3 {
-	color: #2096BA;
+	font-family: 'Rammetto One', cursive;
+	color: #3F72AF;
 }
 
 h1 {
@@ -35,9 +49,19 @@ h1 {
 	font-weight: 700;
 }
 
+header h2 {
+	box-shadow: none;
+	background-color: inherit;
+}
+
 h2 {
 	margin-top: 10px;
 	text-align: center;
+	
+	padding: 20px;
+	margin: 20px;
+	
+
 }
 
 hr {
@@ -72,6 +96,7 @@ hr {
 /*      LEARN   	   */
 /* =================== */
 
+
 .learn-section, 
 .carousel-section {
 	background-color: #f4f4f4;
@@ -82,33 +107,22 @@ hr {
 	background-color: #fff;
     border-radius: 5px;
     box-shadow: 5px 10px 20px #c9c9c9;
-    height: 400px;
     margin: 10px 20px;
-}
-
-.info {
 	text-align: center;
 	font-size: 20px;
 }
 
 .learn-section ul {
-	list-style: none;
-}
-
-/* =================== */
-/*  UPDATED LEARN  	   */
-/* =================== */
-
-
-.learn-section ul {
 	display: flex;
 	justify-content: center;
 	flex-flow: row wrap;
+	padding-left: 0;
 }
 
 .learn-section li {
 	font-size: 140%;
-	
+	flex: default;
+	/*flex-basis: auto; */
 	justify-content: space-between;
 }
 
@@ -171,26 +185,161 @@ hr {
 /* =================== */
 
 .links-section img {
-	width: 150px;
+	width: 100%;
 	height: auto;
-	margin: 20px;
+	margin: 10px;
+	justify-content: center;
+	padding: 30px;
+	margin: 10px;
 }
 
-.links-section div {
-	display: inline-block;
+.links-section ul {
+	display: flex;
 	padding: 80px 0;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-content: center;
 }
 
-.link {
-	padding: 20px;
+.links-section .link  {
+	padding: 0;
+	width: 50%;
 }
+
+.links-section li {
+	padding: 10px;
+	display: flex;
+}
+
+/* =================== */
+/*      MAP 	  	   */
+/* =================== */
+
+.map {
+	padding: 80px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* background-image: url("../img/storePhotos/superheroBackground.jpg"); */
+	background-size: 100% 100%; 
+}
+
+.map h2 {
+	padding: 0 20px;
+}
+
+iframe {
+	align-self: center;
+	box-shadow: 5px 10px 20px #a9a9a9;
+	border: 1px solid #a9a9a9;
+	border-radius: 10px;
+	cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur) 8 8, default;
+}
+
 
 /* =================== */
 /*      ABOUT   	   */
 /* =================== */
 
+.about-section {
+	background-image: /*linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('css/img/ORLDWV0.jpg');*/
+	background-size: 60%;
+	background-position: bottom;
+}
+
+.about-section h2 {
+	box-shadow: none;
+	background-color: inherit;
+}
+
+.about-section {
+	background-color: rgba(128, 137, 151, 0.09);
+}
+
 .about-section p {
+	font-size: 130%;
+
+}
+
+/* =================== */
+/*      FORM 		   */
+/* =================== */
+
+
+.form-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 80px 0;
+}
+
+.form-section h2 {
+	margin-bottom: 0;
 	font-size: 150%;
+	display: block; 
+	box-shadow: none;
+	background-color: inherit;
+}
+
+.form-section p {
+	font-size: 130%;
+	text-align:center;
+	margin-bottom: 20px;
+}
+
+
+
+/* =================== */
+/*      FOOTER 		   */
+/* =================== */
+
+footer {
+	background-color: #233142;
+	display: flex;
+	justify-content: space-between;
+	flex-flow: wrap;
+}
+
+.footer-links,
+.resources {
+	display: flex;
+	margin-top: 10px;
+	color: #3F72AF
+}
+
+.footer-links li,
+.resources li {
+	margin: 10px 5px;
+}
+
+.resources {
+	text-align: center;
+	justify-content: flex-end;
+	margin-right: 40px;
+}
+
+.seperator {
+	color: #d2d2d2;
+	padding: 5px;
+	font-size: 140%;
+}
+
+.purchase {
+	font-size: inherit;
+	color: gray;
+} 
+
+.copyright {
+	display: flex;
+	flex-flow: nowrap;
+	justify-content: center;
+	color: #f4f4f4;
+	font-weight: 100px;
+}
+
+.copyright p:nth-child(2) {
+	margin-left: 20px;
 }
 
 
@@ -198,4 +347,5 @@ hr {
 
 
 
- 
+
+
